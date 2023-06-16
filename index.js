@@ -10,3 +10,12 @@ function mondayWork (activity) {
     return `This Monday, I will ${activity}.`
 }
 console.log(mondayWork('work from home'));
+
+function wrapAdjective (flair = "*") {
+   return `You are ${activity}`
+   return function (adjective = "special") {
+
+   }
+    return `You are ${flair}`
+
+}
