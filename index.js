@@ -6,16 +6,30 @@ function saturdayFun (activity = 'roller-skate') {
 }
 console.log(saturdayFun('bathe my dog'));
 
-function mondayWork (activity) {
+function mondayWork (activity = 'go to the office') {
     return `This Monday, I will ${activity}.`
 }
+
 console.log(mondayWork('work from home'));
 
-function wrapAdjective (flair = "*") {
-   return `You are ${activity}`
-   return function (adjective = "special") {
+// function wrapAdjective (highlight = "*") {
+//     const fn = function(adjective = "special") {
+//     return `You are ${highlight}${adjective}${highlight}!`
+
+//    }
+//     return fn;
+
+// }
+// // wrapAdjective (highlight)
+// console.log(wrapAdjective(highlight = "*"));
+
+function wrapAdjective (highlight = "*") {
+    return function(adjective = "special") {
+    return `You are ${highlight}${adjective}${highlight}!`
 
    }
-    return `You are ${flair}`
+    // return fn;
 
 }
+// wrapAdjective (highlight)
+console.log(wrapAdjective(highlight = "*"));
